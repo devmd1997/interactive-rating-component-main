@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
   
-  <title>Frontend Mentor | Interactive rating component</title>
+  <title>Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,32 +19,44 @@
 
   <!-- Rating state start -->
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
+  <div id="rating-state" class="card-container">
+    <div class="icon">
+      <svg class="scale-75" width="17" height="15" aria-label="rating icon" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+    </div>
+    <div class="text-container">
+      <div class="title-text">How did we do?</div>
+      <div class="body-text">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </div>
+    </div>
+    <div id="rating-container" class="rating-container">
+      <!-- Raiting buttons will go here -->
+    </div>
+    <button id="submit-button" class="submit-button">Submit</button>
+  </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
+ <div id="thank-you-state" class="hidden card-container thank-you">
+    <div class="thank-you-header">
+      <img class="scale-75" src="../images/illustration-thank-you.svg" alt="thank you image" />
+      <div id="confirmation-container" class="confirmation-container">
+        You selected x out of 5
+      </div>
+    </div>
+    <div class="text-container">
+      <div class="title-text">Thank you!</div>
+      <div class="body-text">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
+      </div>
+    </div>
+  </div>
 
   <!-- Thank you state end -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<script src="./main.js"></script>
 </body>
 </html>
